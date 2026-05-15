@@ -127,7 +127,7 @@ function Resume() {
         </div>
       </motion.div>
       <motion.div {...fadeInUp} className=" mt-7 sm:mt-6 md:mt-5 lg:mt-4">
-        <a href=""
+        <a href="/T_Rekha_Sree_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View Resume">
