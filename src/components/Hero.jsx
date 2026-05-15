@@ -31,15 +31,8 @@ function Hero() {
           max-w-[1400px]
           mx-auto
 
-          flex
-          flex-col
-          items-center
-          justify-center
-
-          lg:block
-
-          min-h-[620px]
-          sm:min-h-[850px]
+          h-[520px]
+          sm:h-[650px]
           lg:h-[700px]
         "
       >
@@ -49,10 +42,14 @@ function Hero() {
           className="
             absolute
 
-            top-52
-            w-[220px]
+            top-32
+            left-28
+
+            w-[210px]
             h-[300px]
 
+            sm:top-20
+            sm:left-60
             sm:w-[320px]
             sm:h-[450px]
 
@@ -74,10 +71,14 @@ function Hero() {
             absolute
             z-10
 
-            top-40
-            w-[180px]
-            h-[260px]
+            top-28
+            left-36
 
+            w-[170px]
+            h-[250px]
+
+            sm:top-0
+            sm:left-68
             sm:w-[320px]
             sm:h-[450px]
 
@@ -93,30 +94,30 @@ function Hero() {
         {/* Glass Box */}
         <div
           className="
-            relative
+            absolute
             z-20
 
-            mt-32
+            top-40
+            left-4
 
-            w-full
-            max-w-[300px]
+            w-[300px]
+            h-[230px]
 
-            sm:max-w-[500px]
+            sm:top-32
+            sm:left-8
+            sm:w-[500px]
+            sm:h-[340px]
 
-            lg:absolute
             lg:top-28
             lg:left-0
-            lg:max-w-[680px]
-
-            min-h-[220px]
-            sm:min-h-[320px]
-            lg:min-h-[560px]
+            lg:w-[560px]
+            lg:h-[560px]
 
             border border-white/5
             bg-gradient-to-br from-[#2A2A35]/90 to-[#1B1B24]/70
             backdrop-blur-md
 
-            p-6
+            p-5
             sm:p-10
             lg:p-16
           "
@@ -160,6 +161,7 @@ function Hero() {
 
                 text-[#B8B8C0]
 
+                max-w-[420px]
                 leading-relaxed
               "
             />
