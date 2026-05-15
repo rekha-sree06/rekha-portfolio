@@ -43,7 +43,7 @@ function Hero() {
             absolute
 
             top-12
-            left-15
+            left-20
 
             w-[200px]
             h-[310px]
@@ -71,8 +71,8 @@ function Hero() {
             absolute
             z-10
 
-            top-4
-            left-10
+            top-7
+            left-25
 
             w-[110px]
             h-[290px]
@@ -100,8 +100,8 @@ function Hero() {
             top-22
             left-0
 
-            w-[160px]
-            h-[190px]
+            w-[170px]
+            h-[200px]
 
             sm:top-25
             sm:left-0
@@ -133,7 +133,7 @@ function Hero() {
                 font-['Cormorant_Garamond']
                 text-[#7C48FF]
 
-                text-5xl
+                text-3xl
                 sm:text-7xl
                 lg:text-8xl
 
@@ -155,7 +155,7 @@ function Hero() {
               className="
                 mt-4
 
-                text-sm
+                text-[10px]
                 sm:text-lg
                 lg:text-2xl
 
