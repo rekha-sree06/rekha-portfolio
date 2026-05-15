@@ -45,7 +45,7 @@ function Hero() {
             top-12
             left-40
 
-            w-[200px]
+            w-[190px]
             h-[310px]
 
             sm:top-7
@@ -71,8 +71,8 @@ function Hero() {
             absolute
             z-10
 
-            top-10
-            left-35
+            top-15
+            left-45
 
             w-[110px]
             h-[290px]
@@ -100,7 +100,7 @@ function Hero() {
             top-22
             left-0
 
-            w-[170px]
+            w-[190px]
             h-[200px]
 
             sm:top-25
@@ -153,7 +153,8 @@ function Hero() {
               repeat={0}
               speed={50}
               className="
-                mt-4
+                mt-6
+                sm:mt-4
 
                 text-[7px]
                 sm:text-lg
