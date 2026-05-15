@@ -46,7 +46,7 @@ function Hero() {
             left-40
 
             w-[190px]
-            h-[300px]
+            h-[290px]
 
             sm:top-7
             sm:left-85
@@ -71,10 +71,10 @@ function Hero() {
             absolute
             z-10
 
-            top-15
+            top-12
             left-50
 
-            w-[110px]
+            w-[120px]
             h-[295px]
 
             sm:top-2
