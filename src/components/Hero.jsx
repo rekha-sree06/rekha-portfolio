@@ -42,21 +42,21 @@ function Hero() {
           className="
             absolute
 
-            top-32
-            left-28
+            top-12
+            left-15
 
-            w-[210px]
-            h-[300px]
+            w-[200px]
+            h-[310px]
 
-            sm:top-20
-            sm:left-60
+            sm:top-7
+            sm:left-85
             sm:w-[320px]
-            sm:h-[450px]
+            sm:h-[420px]
 
-            lg:top-8
+            lg:top-2
             lg:left-155
-            lg:w-[650px]
-            lg:h-[690px]
+            lg:w-[630px]
+            lg:h-[600px]
 
             bg-[#B388FF]
             z-0
@@ -71,21 +71,21 @@ function Hero() {
             absolute
             z-10
 
-            top-28
-            left-36
+            top-4
+            left-10
 
-            w-[170px]
-            h-[250px]
+            w-[110px]
+            h-[290px]
 
-            sm:top-0
-            sm:left-68
-            sm:w-[320px]
-            sm:h-[450px]
+            sm:top-2
+            sm:left-90
+            sm:w-[340px]
+            sm:h-[470px]
 
             lg:top-0
             lg:left-170
-            lg:w-[600px]
-            lg:h-[750px]
+            lg:w-[570px]
+            lg:h-[650px]
 
             object-cover
           "
@@ -97,21 +97,21 @@ function Hero() {
             absolute
             z-20
 
-            top-40
-            left-4
+            top-22
+            left-0
 
-            w-[300px]
-            h-[230px]
+            w-[160px]
+            h-[190px]
 
-            sm:top-32
-            sm:left-8
-            sm:w-[500px]
-            sm:h-[340px]
+            sm:top-25
+            sm:left-0
+            sm:w-[405px]
+            sm:h-[320px]
 
             lg:top-28
             lg:left-0
-            lg:w-[560px]
-            lg:h-[560px]
+            lg:w-[650px]
+            lg:h-[450px]
 
             border border-white/5
             bg-gradient-to-br from-[#2A2A35]/90 to-[#1B1B24]/70
