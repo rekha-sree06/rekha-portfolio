@@ -42,11 +42,11 @@ function Hero() {
           className="
             absolute
 
-            top-12
+            top-10
             left-40
 
             w-[190px]
-            h-[250px]
+            h-[260px]
 
             sm:top-7
             sm:left-85
@@ -71,8 +71,8 @@ function Hero() {
             absolute
             z-10
 
-            top-12
-            left-53
+            top-10
+            left-51
 
             w-[150px]
             h-[295px]
