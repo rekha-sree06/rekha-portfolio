@@ -58,7 +58,8 @@ function Navbar() {
         justify-between
         items-center
 
-        px-12
+        px-4
+        sm:px-8
         lg:px-24
         py-2
         sm:py-3
@@ -96,7 +97,7 @@ function Navbar() {
 
       <ul
         id="right-nav"
-        className="flex gap-3.5 sm:gap-5 md:gap-6.5 lg:gap-8 text-lg items-center text-[20px]"
+        className="flex gap-2 sm:gap-5 md:gap-6 lg:gap-8 items-center text-[11px] sm:text-base md:text-lg items-center lg:text-[20px]"
       >
 
         <li>
