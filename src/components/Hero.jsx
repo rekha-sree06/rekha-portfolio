@@ -71,7 +71,7 @@ function Hero() {
             absolute
             z-10
 
-            top-8
+            top-6
             left-50
 
             w-[150px]
