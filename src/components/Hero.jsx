@@ -46,7 +46,7 @@ function Hero() {
             left-40
 
             w-[190px]
-            h-[290px]
+            h-[250px]
 
             sm:top-7
             sm:left-85
@@ -72,9 +72,9 @@ function Hero() {
             z-10
 
             top-12
-            left-50
+            left-55
 
-            w-[120px]
+            w-[130px]
             h-[295px]
 
             sm:top-2
@@ -153,7 +153,7 @@ function Hero() {
               repeat={0}
               speed={50}
               className="
-                mt-10
+                mt-8
                 sm:mt-4
 
                 text-[10px]
