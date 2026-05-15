@@ -49,9 +49,9 @@ function Hero() {
           className="
             absolute
 
-            top-44
-            w-[240px]
-            h-[340px]
+            top-52
+            w-[220px]
+            h-[300px]
 
             sm:w-[320px]
             sm:h-[450px]
@@ -74,9 +74,9 @@ function Hero() {
             absolute
             z-10
 
-            top-52
-            w-[220px]
-            h-[320px]
+            top-40
+            w-[180px]
+            h-[260px]
 
             sm:w-[320px]
             sm:h-[450px]
@@ -96,10 +96,10 @@ function Hero() {
             relative
             z-20
 
-            mt-10
+            mt-32
 
             w-full
-            max-w-[320px]
+            max-w-[300px]
 
             sm:max-w-[500px]
 
@@ -108,7 +108,7 @@ function Hero() {
             lg:left-0
             lg:max-w-[680px]
 
-            min-h-[260px]
+            min-h-[220px]
             sm:min-h-[320px]
             lg:min-h-[560px]
 
@@ -134,7 +134,7 @@ function Hero() {
 
                 text-5xl
                 sm:text-7xl
-                lg:text-9xl
+                lg:text-8xl
 
                 font-bold
                 leading-tight
