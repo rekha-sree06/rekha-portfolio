@@ -20,7 +20,6 @@ function Navbar() {
         const section = document.getElementById(id);
 
         if (section) {
-
           const sectionTop = section.offsetTop - 200;
 
           if (window.scrollY >= sectionTop) {
@@ -28,6 +27,7 @@ function Navbar() {
           }
         }
       });
+
       setActive(current);
     };
 
@@ -61,6 +61,7 @@ function Navbar() {
         px-4
         sm:px-8
         lg:px-24
+
         py-2
         sm:py-3
         md:py-4
@@ -78,13 +79,17 @@ function Navbar() {
       "
     >
 
+      {/* Logo */}
       <a
         href="#home"
         className={`
-          text-4xl leading-none
+          text-[34px]
+          sm:text-[40px]
+
+          leading-none
           transition-all duration-300
           font-['Great_Vibes']
-          text-[40px]
+
           hover:text-[#B388FF]
 
           ${active === "home"
@@ -95,9 +100,23 @@ function Navbar() {
         mySelf
       </a>
 
+      {/* Desktop Navbar */}
       <ul
         id="right-nav"
-        className="flex gap-2 sm:gap-5 md:gap-6 lg:gap-8 items-center text-[11px] sm:text-base md:text-lg items-center lg:text-[20px]"
+        className="
+          hidden
+          sm:flex
+
+          gap-5
+          md:gap-6
+          lg:gap-8
+
+          items-center
+
+          text-base
+          md:text-lg
+          lg:text-[20px]
+        "
       >
 
         <li>
@@ -109,7 +128,7 @@ function Navbar() {
 
               ${active === "about"
                 ? "text-[#B388FF] scale-110"
-                : "text-[#C3BFBF] text-lg"}
+                : "text-[#C3BFBF]"}
             `}
           >
             About
@@ -125,7 +144,7 @@ function Navbar() {
 
               ${active === "projects"
                 ? "text-[#B388FF] scale-110"
-                : "text-[#C3BFBF] text-lg"}
+                : "text-[#C3BFBF]"}
             `}
           >
             Projects
@@ -141,7 +160,7 @@ function Navbar() {
 
               ${active === "resume"
                 ? "text-[#B388FF] scale-110"
-                : "text-[#C3BFBF] text-lg"}
+                : "text-[#C3BFBF]"}
             `}
           >
             Resume
@@ -157,7 +176,7 @@ function Navbar() {
 
               ${active === "contact"
                 ? "text-[#B388FF] scale-110"
-                : "text-[#C3BFBF] text-lg"}
+                : "text-[#C3BFBF]"}
             `}
           >
             Contact
@@ -187,7 +206,34 @@ function Navbar() {
             <FaLinkedin />
           </a>
         </li>
+
       </ul>
+
+      {/* Mobile Icons */}
+      <div className="flex sm:hidden items-center gap-4 text-xl">
+
+        <a
+          href="https://github.com/rekha-sree06"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          className="hover:text-[#B388FF]"
+        >
+          <FaGithub />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/rekha-sree-dev"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          className="hover:text-[#B388FF]"
+        >
+          <FaLinkedin />
+        </a>
+
+      </div>
+
     </nav>
   );
 }

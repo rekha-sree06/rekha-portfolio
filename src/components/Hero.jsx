@@ -38,7 +38,7 @@ function Hero() {
 
           lg:block
 
-          min-h-[700px]
+          min-h-[620px]
           sm:min-h-[850px]
           lg:h-[700px]
         "
@@ -49,7 +49,7 @@ function Hero() {
           className="
             absolute
 
-            top-32
+            top-44
             w-[240px]
             h-[340px]
 
@@ -74,7 +74,7 @@ function Hero() {
             absolute
             z-10
 
-            top-36
+            top-52
             w-[220px]
             h-[320px]
 
