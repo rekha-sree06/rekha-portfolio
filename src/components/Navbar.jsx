@@ -1,0 +1,194 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useEffect, useState } from "react";
+
+function Navbar() {
+  const [active, setActive] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "home",
+        "about",
+        "projects",
+        "resume",
+        "contact",
+      ];
+
+      let current = "home";
+
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+
+        if (section) {
+
+          const sectionTop = section.offsetTop - 200;
+
+          if (window.scrollY >= sectionTop) {
+            current = id;
+          }
+        }
+      });
+      setActive(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <nav
+      id="main-nav"
+      className="
+        fixed
+        top-4
+        left-1/2
+        -translate-x-1/2
+
+        w-[92%]
+        max-w-[1400px]
+
+        z-50
+
+        flex
+        justify-between
+        items-center
+
+        px-12
+        lg:px-24
+        py-2
+        sm:py-3
+        md:py-4
+        lg:py-5
+
+        rounded-2xl
+
+        text-[#C3BFBF]
+        bg-[#050816]/60
+        backdrop-blur-xl
+
+        border border-white/10
+
+        shadow-[0_0_30px_rgba(0,0,0,0.35)]
+      "
+    >
+
+      <a
+        href="#home"
+        className={`
+          text-4xl leading-none
+          transition-all duration-300
+          font-['Great_Vibes']
+          text-[40px]
+          hover:text-[#B388FF]
+
+          ${active === "home"
+            ? "text-[#B388FF] scale-110"
+            : "text-white"}
+        `}
+      >
+        mySelf
+      </a>
+
+      <ul
+        id="right-nav"
+        className="flex gap-3.5 sm:gap-5 md:gap-6.5 lg:gap-8 text-lg items-center text-[20px]"
+      >
+
+        <li>
+          <a
+            href="#about"
+            className={`
+              hover:text-[#B388FF]
+              transition-all duration-300
+
+              ${active === "about"
+                ? "text-[#B388FF] scale-110"
+                : "text-[#C3BFBF] text-lg"}
+            `}
+          >
+            About
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#projects"
+            className={`
+              hover:text-[#B388FF]
+              transition-all duration-300
+
+              ${active === "projects"
+                ? "text-[#B388FF] scale-110"
+                : "text-[#C3BFBF] text-lg"}
+            `}
+          >
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#resume"
+            className={`
+              hover:text-[#B388FF]
+              transition-all duration-300
+
+              ${active === "resume"
+                ? "text-[#B388FF] scale-110"
+                : "text-[#C3BFBF] text-lg"}
+            `}
+          >
+            Resume
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            className={`
+              hover:text-[#B388FF]
+              transition-all duration-300
+
+              ${active === "contact"
+                ? "text-[#B388FF] scale-110"
+                : "text-[#C3BFBF] text-lg"}
+            `}
+          >
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/rekha-sree06"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="hover:text-[#B388FF] transition-all duration-300"
+          >
+            <FaGithub />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/rekha-sree-dev"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="hover:text-[#B388FF] transition-all duration-300"
+          >
+            <FaLinkedin />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
