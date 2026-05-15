@@ -43,7 +43,7 @@ function Hero() {
             absolute
 
             top-12
-            left-20
+            left-40
 
             w-[200px]
             h-[310px]
@@ -71,8 +71,8 @@ function Hero() {
             absolute
             z-10
 
-            top-7
-            left-25
+            top-10
+            left-35
 
             w-[110px]
             h-[290px]
@@ -124,7 +124,7 @@ function Hero() {
         >
 
           <div className="text-white">
-            <p className="text-2xl sm:text-5xl lg:text-7xl">
+            <p className="text-lg sm:text-5xl lg:text-7xl">
               Hi, I'm
             </p>
 
@@ -133,7 +133,7 @@ function Hero() {
                 font-['Cormorant_Garamond']
                 text-[#7C48FF]
 
-                text-3xl
+                text-2xl
                 sm:text-7xl
                 lg:text-8xl
 
@@ -155,7 +155,7 @@ function Hero() {
               className="
                 mt-4
 
-                text-[10px]
+                text-[7px]
                 sm:text-lg
                 lg:text-2xl
 
