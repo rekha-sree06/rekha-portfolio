@@ -71,8 +71,8 @@ function Hero() {
             absolute
             z-10
 
-            top-15
-            left-45
+            top-20
+            left-50
 
             w-[110px]
             h-[290px]
@@ -124,7 +124,7 @@ function Hero() {
         >
 
           <div className="text-white">
-            <p className="text-lg sm:text-5xl lg:text-7xl">
+            <p className="text-xl sm:text-5xl lg:text-7xl">
               Hi, I'm
             </p>
 
@@ -133,7 +133,7 @@ function Hero() {
                 font-['Cormorant_Garamond']
                 text-[#7C48FF]
 
-                text-2xl
+                text-3xl
                 sm:text-7xl
                 lg:text-8xl
 
@@ -153,10 +153,10 @@ function Hero() {
               repeat={0}
               speed={50}
               className="
-                mt-6
+                mt-10
                 sm:mt-4
 
-                text-[7px]
+                text-[10px]
                 sm:text-lg
                 lg:text-2xl
 
