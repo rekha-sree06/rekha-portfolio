@@ -166,6 +166,30 @@ function Hero() {
                 leading-relaxed
               "
             />
+            <a
+              href="#projects"
+              className="
+                inline-flex
+                items-center
+                gap-1
+                text-[#B388FF]
+                font-['Cormorant_Garamond']
+                text-[8px]
+                sm:text-sm
+                lg:text-xl
+                font-medium
+                border-b
+                border-[#B388FF]/50
+                pb-1
+                hover:text-white
+                hover:border-white
+                transition-all
+                duration-300
+              "
+            >
+              View My Projects
+              <span>→</span>
+            </a>
           </div>
         </div>
       </motion.div>
